@@ -9,7 +9,9 @@ __pycache__/
 *.pth
 *.txt
 *.zip
-*.npy
+# *.npy
+/GLOres
+/GANres
 
 # Figs
 *.pdf

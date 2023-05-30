@@ -1,0 +1,138 @@
+Generative Model size (total): 0.185M
+Label convention:
+real: 1  fake: 0
+Architecture:
+Generator(
+  (layers): ModuleList(
+    (0): Sequential(
+      (0): Linear(in_features=20, out_features=20, bias=True)
+      (1): LeakyReLU(negative_slope=0.01)
+      (2): BatchNorm1d(20, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (1): Sequential(
+      (0): Linear(in_features=20, out_features=124, bias=True)
+      (1): LeakyReLU(negative_slope=0.01)
+      (2): BatchNorm1d(124, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (2): Sequential(
+      (0): Linear(in_features=124, out_features=229, bias=True)
+      (1): LeakyReLU(negative_slope=0.01)
+      (2): BatchNorm1d(229, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (3): Sequential(
+      (0): Linear(in_features=229, out_features=334, bias=True)
+      (1): LeakyReLU(negative_slope=0.01)
+      (2): BatchNorm1d(334, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+    (4): Sequential(
+      (0): Linear(in_features=334, out_features=223, bias=True)
+    )
+  )
+)
+
+
+
+
+Starting Training Loop...
+Epoch[1/1000]	Loss_D: 1.4676	Loss_G: 18.4607	D(x): 0.4948	D(G(z)): 0.4142 / 0.3488
+Epoch[10/1000]	Loss_D: 1.3048	Loss_G: 0.6902	D(x): 0.5775	D(G(z)): 0.5204 / 0.5017
+Epoch[20/1000]	Loss_D: 0.0420	Loss_G: 4.8664	D(x): 0.9989	D(G(z)): 0.0268 / 0.0190
+Epoch[30/1000]	Loss_D: 0.0332	Loss_G: 5.7468	D(x): 0.9877	D(G(z)): 0.0202 / 0.0098
+Epoch[40/1000]	Loss_D: 1.1259	Loss_G: 2.5361	D(x): 0.3605	D(G(z)): 0.0806 / 0.0842
+Epoch[50/1000]	Loss_D: 0.0533	Loss_G: 6.0784	D(x): 0.9514	D(G(z)): 0.0031 / 0.0029
+Epoch[60/1000]	Loss_D: 0.0045	Loss_G: 6.4109	D(x): 0.9984	D(G(z)): 0.0029 / 0.0022
+Epoch[70/1000]	Loss_D: 0.1261	Loss_G: 2.7784	D(x): 1.0000	D(G(z)): 0.1117 / 0.1034
+Epoch[80/1000]	Loss_D: 0.0847	Loss_G: 5.3239	D(x): 0.9408	D(G(z)): 0.0163 / 0.0114
+Epoch[90/1000]	Loss_D: 0.0895	Loss_G: 4.2459	D(x): 0.9435	D(G(z)): 0.0259 / 0.0227
+Epoch[100/1000]	Loss_D: 0.0206	Loss_G: 5.8233	D(x): 0.9850	D(G(z)): 0.0053 / 0.0048
+Epoch[110/1000]	Loss_D: 0.0380	Loss_G: 6.1501	D(x): 0.9761	D(G(z)): 0.0122 / 0.0109
+Epoch[120/1000]	Loss_D: 1.4349	Loss_G: 6.0086	D(x): 0.7856	D(G(z)): 0.1568 / 0.2069
+Epoch[130/1000]	Loss_D: 2.2110	Loss_G: 1.5668	D(x): 0.6099	D(G(z)): 0.1967 / 0.3374
+Epoch[140/1000]	Loss_D: 0.0253	Loss_G: 5.3714	D(x): 0.9803	D(G(z)): 0.0051 / 0.0048
+Epoch[150/1000]	Loss_D: 0.3039	Loss_G: 2.9325	D(x): 0.8462	D(G(z)): 0.0665 / 0.0660
+Epoch[160/1000]	Loss_D: 0.4490	Loss_G: 3.9118	D(x): 0.8406	D(G(z)): 0.1508 / 0.0325
+Epoch[170/1000]	Loss_D: 0.0210	Loss_G: 6.3688	D(x): 0.9819	D(G(z)): 0.0027 / 0.0024
+Epoch[180/1000]	Loss_D: 0.0751	Loss_G: 4.8122	D(x): 0.9597	D(G(z)): 0.0266 / 0.0111
+Epoch[190/1000]	Loss_D: 0.0266	Loss_G: 9.1186	D(x): 0.9743	D(G(z)): 0.0005 / 0.0006
+Epoch[200/1000]	Loss_D: 0.9327	Loss_G: 1.2613	D(x): 0.7559	D(G(z)): 0.3433 / 0.3156
+Epoch[210/1000]	Loss_D: 0.0103	Loss_G: 5.6074	D(x): 0.9970	D(G(z)): 0.0072 / 0.0066
+Epoch[220/1000]	Loss_D: 0.4108	Loss_G: 3.8823	D(x): 0.7987	D(G(z)): 0.0991 / 0.0488
+Epoch[230/1000]	Loss_D: 0.1593	Loss_G: 3098.5774	D(x): 0.8688	D(G(z)): 0.0000 / 0.0000
+Epoch[240/1000]	Loss_D: 0.0305	Loss_G: 23.7060	D(x): 0.9766	D(G(z)): 0.0059 / 0.0025
+Epoch[250/1000]	Loss_D: 0.0368	Loss_G: 6.5909	D(x): 0.9720	D(G(z)): 0.0057 / 0.0095
+Epoch[260/1000]	Loss_D: 0.0712	Loss_G: 5.4634	D(x): 0.9695	D(G(z)): 0.0369 / 0.0253
+Epoch[270/1000]	Loss_D: 1.1892	Loss_G: 2.1270	D(x): 0.5662	D(G(z)): 0.1498 / 0.1525
+Epoch[280/1000]	Loss_D: 1.3792	Loss_G: 0.7301	D(x): 0.5069	D(G(z)): 0.4924 / 0.4836
+Epoch[290/1000]	Loss_D: 1.3731	Loss_G: 0.7067	D(x): 0.5041	D(G(z)): 0.4936 / 0.4934
+Epoch[300/1000]	Loss_D: 0.5713	Loss_G: 2.5310	D(x): 0.6978	D(G(z)): 0.1125 / 0.0964
+Epoch[310/1000]	Loss_D: 0.0433	Loss_G: 6.1847	D(x): 0.9637	D(G(z)): 0.0058 / 0.0061
+Epoch[320/1000]	Loss_D: 1.3741	Loss_G: 1.8154	D(x): 0.8078	D(G(z)): 0.5394 / 0.4840
+Epoch[330/1000]	Loss_D: 0.0558	Loss_G: 5.2494	D(x): 0.9531	D(G(z)): 0.0066 / 0.0061
+Epoch[340/1000]	Loss_D: 0.0178	Loss_G: 6.4070	D(x): 0.9869	D(G(z)): 0.0046 / 0.0027
+Epoch[350/1000]	Loss_D: 0.1105	Loss_G: 4.7723	D(x): 0.9109	D(G(z)): 0.0141 / 0.0131
+Epoch[360/1000]	Loss_D: 0.0455	Loss_G: 6.3224	D(x): 0.9625	D(G(z)): 0.0068 / 0.0069
+Epoch[370/1000]	Loss_D: 0.3012	Loss_G: 2.6397	D(x): 0.8462	D(G(z)): 0.0818 / 0.0751
+Epoch[380/1000]	Loss_D: 0.9859	Loss_G: 1.2069	D(x): 0.6168	D(G(z)): 0.3095 / 0.3021
+Epoch[390/1000]	Loss_D: 1.3687	Loss_G: 0.6416	D(x): 0.5424	D(G(z)): 0.5274 / 0.5265
+Epoch[400/1000]	Loss_D: 1.2599	Loss_G: 0.8120	D(x): 0.5527	D(G(z)): 0.4573 / 0.4450
+Epoch[410/1000]	Loss_D: 1.3937	Loss_G: 0.7296	D(x): 0.4884	D(G(z)): 0.4835 / 0.4822
+Epoch[420/1000]	Loss_D: 1.3553	Loss_G: 0.7378	D(x): 0.5029	D(G(z)): 0.4794 / 0.4782
+Epoch[430/1000]	Loss_D: 1.3829	Loss_G: 0.7066	D(x): 0.4997	D(G(z)): 0.4946 / 0.4933
+Epoch[440/1000]	Loss_D: 0.2161	Loss_G: 4.3491	D(x): 0.8331	D(G(z)): 0.0275 / 0.0189
+Epoch[450/1000]	Loss_D: 0.1855	Loss_G: 24.7962	D(x): 0.8904	D(G(z)): 0.0000 / 0.0000
+Epoch[460/1000]	Loss_D: 0.1543	Loss_G: 4.5540	D(x): 0.9062	D(G(z)): 0.0388 / 0.0219
+Epoch[470/1000]	Loss_D: 1.4678	Loss_G: 0.5154	D(x): 0.6015	D(G(z)): 0.6102 / 0.6063
+Epoch[480/1000]	Loss_D: 1.1571	Loss_G: 0.8320	D(x): 0.6067	D(G(z)): 0.4448 / 0.4365
+Epoch[490/1000]	Loss_D: 3.0986	Loss_G: 1.4683	D(x): 0.6032	D(G(z)): 0.7841 / 0.2843
+Epoch[500/1000]	Loss_D: 0.3768	Loss_G: 4.2645	D(x): 0.7647	D(G(z)): 0.0691 / 0.0704
+Epoch[510/1000]	Loss_D: 1.3387	Loss_G: 0.5388	D(x): 0.6395	D(G(z)): 0.5853 / 0.5841
+Epoch[520/1000]	Loss_D: 1.1707	Loss_G: 0.8252	D(x): 0.5727	D(G(z)): 0.4420 / 0.4411
+Epoch[530/1000]	Loss_D: 1.3479	Loss_G: 0.7313	D(x): 0.5090	D(G(z)): 0.4820 / 0.4815
+Epoch[540/1000]	Loss_D: 0.0775	Loss_G: 10.6091	D(x): 0.9315	D(G(z)): 0.0042 / 0.0063
+Epoch[550/1000]	Loss_D: 0.0190	Loss_G: 9.8410	D(x): 0.9841	D(G(z)): 0.0029 / 0.0028
+Epoch[560/1000]	Loss_D: 0.0555	Loss_G: 9.0989	D(x): 0.9609	D(G(z)): 0.0129 / 0.0124
+Epoch[570/1000]	Loss_D: 0.0075	Loss_G: 6.6556	D(x): 0.9953	D(G(z)): 0.0028 / 0.0019
+Epoch[580/1000]	Loss_D: 0.5720	Loss_G: 6.1812	D(x): 0.8230	D(G(z)): 0.0426 / 0.0345
+Epoch[590/1000]	Loss_D: 0.0387	Loss_G: 6.6050	D(x): 0.9700	D(G(z)): 0.0065 / 0.0064
+Epoch[600/1000]	Loss_D: 0.0048	Loss_G: 5.8439	D(x): 0.9992	D(G(z)): 0.0040 / 0.0039
+Epoch[610/1000]	Loss_D: 0.0230	Loss_G: 9.0908	D(x): 0.9794	D(G(z)): 0.0022 / 0.0010
+Epoch[620/1000]	Loss_D: 0.0356	Loss_G: 6.6728	D(x): 0.9761	D(G(z)): 0.0112 / 0.0058
+Epoch[630/1000]	Loss_D: 0.0296	Loss_G: 14.6476	D(x): 0.9710	D(G(z)): 0.0002 / 0.0000
+Epoch[640/1000]	Loss_D: 0.1370	Loss_G: 7.6940	D(x): 0.8767	D(G(z)): 0.0052 / 0.0017
+Epoch[650/1000]	Loss_D: 0.2303	Loss_G: 8.3379	D(x): 0.9108	D(G(z)): 0.0812 / 0.0069
+Epoch[660/1000]	Loss_D: 1.3909	Loss_G: 0.6974	D(x): 0.4980	D(G(z)): 0.4991 / 0.4979
+Epoch[670/1000]	Loss_D: 1.3741	Loss_G: 0.6945	D(x): 0.5071	D(G(z)): 0.4996 / 0.4994
+Epoch[680/1000]	Loss_D: 1.3470	Loss_G: 0.6887	D(x): 0.5298	D(G(z)): 0.5036 / 0.5023
+Epoch[690/1000]	Loss_D: 1.3707	Loss_G: 0.7194	D(x): 0.5016	D(G(z)): 0.4884 / 0.4872
+Epoch[700/1000]	Loss_D: 1.3455	Loss_G: 0.6090	D(x): 0.5795	D(G(z)): 0.5436 / 0.5459
+Epoch[710/1000]	Loss_D: 0.0587	Loss_G: 7.4954	D(x): 0.9445	D(G(z)): 0.0015 / 0.0011
+Epoch[720/1000]	Loss_D: 1.6833	Loss_G: 0.7004	D(x): 0.6427	D(G(z)): 0.5909 / 0.5597
+Epoch[730/1000]	Loss_D: 0.7533	Loss_G: 3.4291	D(x): 0.7917	D(G(z)): 0.3288 / 0.2766
+Epoch[740/1000]	Loss_D: 0.2020	Loss_G: 5.0297	D(x): 0.8519	D(G(z)): 0.0313 / 0.0298
+Epoch[750/1000]	Loss_D: 0.0422	Loss_G: 6.4914	D(x): 0.9681	D(G(z)): 0.0096 / 0.0088
+Epoch[760/1000]	Loss_D: 0.0514	Loss_G: 10.2312	D(x): 0.9630	D(G(z)): 0.0117 / 0.0070
+Epoch[770/1000]	Loss_D: 0.0038	Loss_G: 6.3995	D(x): 0.9998	D(G(z)): 0.0036 / 0.0032
+Epoch[780/1000]	Loss_D: 0.0762	Loss_G: 9.3162	D(x): 0.9503	D(G(z)): 0.0185 / 0.0148
+Epoch[790/1000]	Loss_D: 0.1422	Loss_G: 3.3512	D(x): 0.9428	D(G(z)): 0.0586 / 0.0550
+Epoch[800/1000]	Loss_D: 0.0163	Loss_G: 6.3362	D(x): 0.9867	D(G(z)): 0.0029 / 0.0027
+Epoch[810/1000]	Loss_D: 0.0009	Loss_G: 11.2531	D(x): 0.9997	D(G(z)): 0.0006 / 0.0001
+Epoch[820/1000]	Loss_D: 0.0508	Loss_G: 5.8238	D(x): 0.9690	D(G(z)): 0.0137 / 0.0060
+Epoch[830/1000]	Loss_D: 0.4367	Loss_G: 2.7282	D(x): 0.8735	D(G(z)): 0.1673 / 0.0949
+Epoch[840/1000]	Loss_D: 0.1900	Loss_G: 3.9599	D(x): 0.9087	D(G(z)): 0.0799 / 0.0301
+Epoch[850/1000]	Loss_D: 0.0307	Loss_G: 13.6811	D(x): 0.9704	D(G(z)): 0.0007 / 0.0002
+Epoch[860/1000]	Loss_D: 0.0636	Loss_G: 6.9057	D(x): 0.9436	D(G(z)): 0.0029 / 0.0011
+Epoch[870/1000]	Loss_D: 1.4434	Loss_G: 0.4705	D(x): 0.6532	D(G(z)): 0.6368 / 0.6251
+Epoch[880/1000]	Loss_D: 0.1804	Loss_G: 4.4363	D(x): 0.8798	D(G(z)): 0.0334 / 0.0265
+Epoch[890/1000]	Loss_D: 0.9083	Loss_G: 1.2685	D(x): 0.7213	D(G(z)): 0.3188 / 0.2973
+Epoch[900/1000]	Loss_D: 0.0304	Loss_G: 5.2862	D(x): 0.9988	D(G(z)): 0.0284 / 0.0131
+Epoch[910/1000]	Loss_D: 0.2638	Loss_G: 4.6653	D(x): 0.9802	D(G(z)): 0.1954 / 0.1638
+Epoch[920/1000]	Loss_D: 1.5164	Loss_G: 0.6114	D(x): 0.6013	D(G(z)): 0.6143 / 0.5537
+Epoch[930/1000]	Loss_D: 1.3558	Loss_G: 0.7064	D(x): 0.5132	D(G(z)): 0.4939 / 0.4936
+Epoch[940/1000]	Loss_D: 1.4069	Loss_G: 0.5936	D(x): 0.5574	D(G(z)): 0.5607 / 0.5523
+Epoch[950/1000]	Loss_D: 1.3159	Loss_G: 0.7685	D(x): 0.5537	D(G(z)): 0.4828 / 0.4667
+Epoch[960/1000]	Loss_D: 0.2525	Loss_G: 4.3434	D(x): 0.9196	D(G(z)): 0.1421 / 0.0519
+Epoch[970/1000]	Loss_D: 0.0392	Loss_G: 7.1494	D(x): 0.9734	D(G(z)): 0.0113 / 0.0028
+Epoch[980/1000]	Loss_D: 1.4523	Loss_G: 0.4577	D(x): 0.6578	D(G(z)): 0.6433 / 0.6328
+Epoch[990/1000]	Loss_D: 1.3798	Loss_G: 0.7160	D(x): 0.4947	D(G(z)): 0.4895 / 0.4887
+Epoch[1000/1000]	Loss_D: 1.3820	Loss_G: 0.6884	D(x): 0.5047	D(G(z)): 0.5025 / 0.5024
+
